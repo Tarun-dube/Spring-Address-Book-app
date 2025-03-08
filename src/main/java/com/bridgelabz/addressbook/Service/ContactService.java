@@ -26,6 +26,7 @@ public class ContactService {
         Contact newContact = new Contact((long) (contacts.size() + 1), contactDTO.getName(), contactDTO.getEmail(), contactDTO.getPhone());
         contacts.add(newContact);
         return "Contact added successfully";
+
     }
 
     // Update Contact
