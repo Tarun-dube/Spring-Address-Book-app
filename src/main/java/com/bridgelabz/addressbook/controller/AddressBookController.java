@@ -1,5 +1,6 @@
 package com.bridgelabz.addressbook.controller;
 
+
 import com.bridgelabz.addressbook.model.Contact;
 import com.bridgelabz.addressbook.repository.ContactRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -56,5 +57,6 @@ public class AddressBookController{
     public ResponseEntity<Void> deleteContact(@PathVariable Long id) {
         contactRepository.deleteById(id);
         return ResponseEntity.noContent().build();
+
     }
 }
